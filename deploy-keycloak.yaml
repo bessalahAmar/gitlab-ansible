@@ -1,0 +1,5 @@
+- hosts: keycloak-server
+  roles:
+    - keycloak
+  vars:
+    keycloak_admin_password: "admin"
