@@ -1,5 +1,9 @@
 - hosts: keycloak-server
+  remote_user: amar
+  become: yes
+  become_user: root
   roles:
     - keycloak
   vars:
     keycloak_admin_password: "admin"
+    keycloak_user: keycloak2
