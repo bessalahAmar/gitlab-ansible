@@ -1,0 +1,9 @@
+- hosts: postgresql
+  remote_user: amar
+  #become: yes
+  #become_user: root
+  vars_files:
+    - roles/ansible-role-postgresql/vars/main.yml
+  roles:
+    - role: ansible-role-postgresql
+      become: yes
