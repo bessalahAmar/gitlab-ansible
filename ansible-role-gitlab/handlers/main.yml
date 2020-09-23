@@ -1,0 +1,13 @@
+---
+- name: restart gitlab
+  command: gitlab-ctl reconfigure
+  register: gitlab_restart
+  failed_when: gitlab_restart_handler_failed_when
+
+- name: clear cache gitlab
+  command: gitlab-rake cache:clear
+  register: gitlab_clean_cache
+  failed_when: gitlab_restart_handler_failed_when
+
+- name: update yum repository
+  command: yum update -y

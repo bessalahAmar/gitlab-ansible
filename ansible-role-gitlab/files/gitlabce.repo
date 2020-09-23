@@ -1,0 +1,5 @@
+[gitlabce]
+name=gitlabce
+baseurl=http://10.106.200.146:8081/liferay/nexus/repository/gitlab-ce/
+enabled=1
+gpgcheck=0

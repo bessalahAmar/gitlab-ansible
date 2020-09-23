@@ -1,0 +1,5 @@
+gitlab_version: '13.1.4-ce.0.el7'
+gitlab_external_url: "http://104.197.55.152/gitlab"
+nginx_custom_gitlab_server_config : "location /status {\n proxy_cache off; \n proxy_pass http://104.197.55.152/gitlab/users/sign_in; \n}\n"
+realm_name: "erable"
+keycloak_url: "10.128.0.14:8443"
