@@ -2,3 +2,4 @@ all:
   hosts:
     keycloak-server:
     postgresql:
+    gitlab:
