@@ -1,0 +1,6 @@
+- name: install gitlab-ce
+  hosts: gitlab
+  become: yes
+  tasks:
+    - import_role:
+        name: gitlab-ce-efy
